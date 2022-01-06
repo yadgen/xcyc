@@ -1,2 +1,2 @@
-# xcyc
-XCYC Service
+# xcyc-sdk
+XCYC SDK
