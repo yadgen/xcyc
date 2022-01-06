@@ -1,0 +1,20 @@
+{
+    "name": "yadgen/xcyc-sdk",
+    "description": "XCYC SDK",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yadgen\\XcycSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yadgen",
+            "email": "yadgen@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    }
+}
