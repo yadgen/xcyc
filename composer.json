@@ -6,7 +6,11 @@
     "autoload": {
         "psr-4": {
             "Yadgen\\XcycSdk\\": "src/"
-        }
+        },
+        "files": [
+            "src/Kernel/Support/Helpers.php",
+            "src/Kernel/Helpers.php"
+        ]
     },
     "authors": [
         {
