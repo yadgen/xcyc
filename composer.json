@@ -3,6 +3,27 @@
     "description": "XCYC SDK",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "yadgen",
+            "email": "yadgen@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "psr/simple-cache": "^1.0",
+        "symfony/cache": "^5.4",
+        "symfony/event-dispatcher": "^5.4",
+        "symfony/http-foundation": "^5.4",
+        "symfony/psr-http-message-bridge": "^2.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.4",
+        "mikey179/vfsstream": "^1.6",
+        "mockery/mockery": "^1.4",
+        "phpstan/phpstan": "^1.4",
+        "phpunit/phpunit": "^9.5"
+    },
     "autoload": {
         "psr-4": {
             "Yadgen\\XcycSdk\\": "src/"
@@ -12,13 +33,16 @@
             "src/Kernel/Helpers.php"
         ]
     },
-    "authors": [
-        {
-            "name": "yadgen",
-            "email": "yadgen@gmail.com"
+    "autoload-dev": {
+        "psr-4": {
+            "Yadgen\\Tests\\": "tests/"
         }
-    ],
-    "require": {
-        "php": "^7.3"
+    },
+    "scripts": {
+        "phpcs": "vendor/bin/php-cs-fixer fix",
+        "phpstan": "vendor/bin/phpstan analyse",
+        "check-style": "php-cs-fixer fix --using-cache=no --diff --config=.php_cs --dry-run --ansi",
+        "fix-style": "php-cs-fixer fix --using-cache=no --config=.php_cs --ansi",
+        "test": "vendor/bin/phpunit --colors=always"
     }
 }
