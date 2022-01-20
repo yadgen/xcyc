@@ -1,6 +1,6 @@
-# XCYC-SDK
+# XCYC
 
-## Installing XCYC-SDK
+## Installing XCYC
 ```bash
-composer require yadgen/xcyc-sdk
+composer require yadgen/xcyc
 ```
