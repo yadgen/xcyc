@@ -1,6 +1,9 @@
 {
-    "name": "yadgen/xcyc-sdk",
-    "description": "XCYC SDK",
+    "name": "yadgen/xcyc",
+    "description": "XCYC",
+    "keywords": [
+        "xcyc"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -31,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Yadgen\\XcycSdk\\": "src/"
+            "Yadgen\\Xcyc\\": "src/"
         },
         "files": [
             "src/Kernel/Support/Helpers.php",
