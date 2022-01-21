@@ -1,8 +1,8 @@
 <?php
 
-namespace Yadgen\Xcyc\Crm;
+namespace Xcyc\Crm;
 
-use Yadgen\Xcyc\Kernel\ServiceContainer;
+use Xcyc\Kernel\ServiceContainer;
 
 class Application extends ServiceContainer
 {

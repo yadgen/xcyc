@@ -2,7 +2,7 @@
 
 include __DIR__ . '/../vendor/autoload.php';
 
-use Yadgen\Xcyc\Tests\Client;
+use Xcyc\Tests\Client;
 
 $client = new Client(5, 1);
 

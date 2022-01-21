@@ -1,11 +1,11 @@
 <?php
 
-namespace Yadgen\Xcyc;
+namespace Xcyc;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use Yadgen\Xcyc\Crm\Application as Crm;
-use Yadgen\Xcyc\Scrm\Application as Scrm;
-use Yadgen\Xcyc\MiniProgram\Application as MiniProgram;
+use Xcyc\Crm\Application as Crm;
+use Xcyc\Scrm\Application as Scrm;
+use Xcyc\MiniProgram\Application as MiniProgram;
 
 class ServiceProvider extends LaravelServiceProvider
 {
@@ -15,7 +15,6 @@ class ServiceProvider extends LaravelServiceProvider
 
     protected function setupConfig()
     {
-
     }
 
     public function register()
@@ -31,8 +30,13 @@ class ServiceProvider extends LaravelServiceProvider
 
         foreach ($apps as $name => $class) {
             $this->app->singleton($name, function ($laravelApp) use ($name, $class) {
-                return new $class;
+                $app = new $class();
+                $app['request'] = $laravelApp['request'];
+
+                return $app;
             });
+
+            $this->app->alias('xcyc.' . $name, $class);
         }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yadgen\Xcyc;
+namespace Xcyc;
 
 class Xcyc
 {

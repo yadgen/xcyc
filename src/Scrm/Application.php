@@ -1,8 +1,8 @@
 <?php
 
-namespace Yadgen\Xcyc\Scrm;
+namespace Xcyc\Scrm;
 
-use Yadgen\Xcyc\Kernel\ServiceContainer;
+use Xcyc\Kernel\ServiceContainer;
 
 class Application extends ServiceContainer
 {

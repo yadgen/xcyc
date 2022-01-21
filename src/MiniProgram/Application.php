@@ -1,8 +1,8 @@
 <?php
 
-namespace Yadgen\Xcyc\MiniProgram;
+namespace Xcyc\MiniProgram;
 
-use Yadgen\Xcyc\Kernel\ServiceContainer;
+use Xcyc\Kernel\ServiceContainer;
 
 class Application extends ServiceContainer
 {

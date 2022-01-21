@@ -1,13 +1,13 @@
 <?php
 
-namespace Yadgen;
+namespace Xcyc;
 
 class Factory
 {
     public static function make($name, array $config)
     {
         $namespace = Kernel\Support\Str::studly($name);
-        $application = "\\Yadgen\\{$namespace}\\Application";
+        $application = "Xcyc\\{$namespace}\\Application";
 
         return new $application($config);
     }

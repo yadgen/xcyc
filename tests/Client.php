@@ -1,6 +1,6 @@
 <?php
 
-namespace Yadgen\Xcyc\Tests;
+namespace Xcyc\Tests;
 
 class Client
 {

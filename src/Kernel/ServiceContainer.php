@@ -1,6 +1,6 @@
 <?php
 
-namespace Yadgen\Xcyc\Kernel;
+namespace Xcyc\Kernel;
 
 use Pimple\Container;
 

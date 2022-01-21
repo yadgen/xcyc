@@ -34,12 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Yadgen\\Xcyc\\": "src/"
+            "Xcyc\\": "yadgen/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yadgen\\Xcyc\\Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Xcyc\\Tests\\": "yadgen/xcyc/tests/"
         }
     },
     "scripts": {
