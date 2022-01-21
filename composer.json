@@ -1,6 +1,6 @@
 {
     "name": "yadgen/xcyc",
-    "description": "XCYC",
+    "description": "Xcyc",
     "keywords": [
         "xcyc"
     ],
@@ -35,15 +35,11 @@
     "autoload": {
         "psr-4": {
             "Yadgen\\Xcyc\\": "src/"
-        },
-        "files": [
-            "src/Kernel/Support/Helpers.php",
-            "src/Kernel/Helpers.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yadgen\\Tests\\": "tests/"
+            "Yadgen\\Xcyc\\Tests\\": "tests/"
         }
     },
     "scripts": {
