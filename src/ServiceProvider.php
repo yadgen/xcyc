@@ -3,6 +3,9 @@
 namespace Yadgen\Xcyc;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
+use Yadgen\Xcyc\Crm\Application as Crm;
+use Yadgen\Xcyc\Scrm\Application as Scrm;
+use Yadgen\Xcyc\MiniProgram\Application as MiniProgram;
 
 class ServiceProvider extends LaravelServiceProvider
 {
@@ -20,16 +23,16 @@ class ServiceProvider extends LaravelServiceProvider
         $this->setupConfig();
 
         $apps = [
-            'crm' => '',
-            'scrm' => '',
-            'mini_program' => '',
+            'xcyc' => Xcyc::class,
+            'crm' => Crm::class,
+            'scrm' => Scrm::class,
+            'mini_program' => MiniProgram::class,
         ];
 
         foreach ($apps as $name => $class) {
-
+            $this->app->singleton($name, function ($laravelApp) use ($name, $class) {
+                return new $class;
+            });
         }
-
-        $this->app->singleton('xcyc', function () {
-        });
     }
 }

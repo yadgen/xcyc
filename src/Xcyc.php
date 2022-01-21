@@ -4,8 +4,12 @@ namespace Yadgen\Xcyc;
 
 class Xcyc
 {
-    public function printRunning()
+    public function printTest()
     {
-        echo 'running' . "\n";
+        $response = [
+            'test',
+        ];
+
+        return response()->json($response);
     }
 }
