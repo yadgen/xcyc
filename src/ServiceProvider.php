@@ -3,7 +3,7 @@
 namespace Xcyc;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use Xcyc\XcycTest;
+use Xcyc\Tests\XcycTest;
 use Xcyc\Crm\Application as Crm;
 use Xcyc\Scrm\Application as Scrm;
 use Xcyc\MiniProgram\Application as MiniProgram;
