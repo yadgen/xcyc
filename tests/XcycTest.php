@@ -2,7 +2,7 @@
 
 namespace Xcyc\Tests;
 
-class Xcyc
+class XcycTest
 {
     public function printTest()
     {

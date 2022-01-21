@@ -1,6 +1,6 @@
 <?php
 
-namespace Xcyc\OrderSaas;
+namespace Xcyc\Scrm\OrderSaas;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

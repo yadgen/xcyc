@@ -3,7 +3,7 @@
 namespace Xcyc;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use Xcyc\Tests\Xcyc;
+use Xcyc\Tests\XcycTest;
 use Xcyc\Crm\Application as Crm;
 use Xcyc\Scrm\Application as Scrm;
 use Xcyc\MiniProgram\Application as MiniProgram;
@@ -23,7 +23,7 @@ class ServiceProvider extends LaravelServiceProvider
         $this->setupConfig();
 
         $apps = [
-            'xcyc' => Xcyc::class,
+            'xcyc_test' => XcycTest::class,
             'crm' => Crm::class,
             'scrm' => Scrm::class,
             'mini_program' => MiniProgram::class,
@@ -37,7 +37,7 @@ class ServiceProvider extends LaravelServiceProvider
                 return $app;
             });
 
-            $this->app->alias('xcyc.' . $name, $class);
+            // $this->app->alias('xcyc.' . $name, $class);
         }
     }
 }
