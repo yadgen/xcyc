@@ -35,7 +35,7 @@ class ServiceProvider extends LaravelServiceProvider
                 return $app;
             });
 
-            // $this->app->alias('xcyc.' . $name, $class);
+            $this->app->alias('xcyc.' . $name, $class);
         }
     }
 }
