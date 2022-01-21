@@ -1,6 +1,6 @@
 {
     "name": "yadgen/xcyc",
-    "description": "Xcyc",
+    "description": "心诚养车SDK",
     "keywords": [
         "xcyc"
     ],
@@ -34,13 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Xcyc\\": "yadgen/src/"
+            "Xcyc\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/",
-            "Xcyc\\Tests\\": "yadgen/xcyc/tests/"
+            "Xcyc\\Tests\\": "tests/"
         }
     },
     "scripts": {
