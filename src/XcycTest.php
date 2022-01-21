@@ -1,6 +1,6 @@
 <?php
 
-namespace Xcyc\Tests;
+namespace Xcyc;
 
 class XcycTest
 {
