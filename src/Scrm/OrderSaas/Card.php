@@ -2,13 +2,11 @@
 
 namespace Xcyc\Scrm\OrderSaas;
 
-class Card
+use Xcyc\Scrm\Kernel\BaseOrderSaas;
+
+class Card extends BaseOrderSaas
 {
-    public function use()
+    public function __construct()
     {
-        $data = [
-            'use card'
-        ];
-        return response()->json($data);
     }
 }

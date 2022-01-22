@@ -2,13 +2,11 @@
 
 namespace Xcyc\Scrm\OrderSaas;
 
-class Score
+use Xcyc\Scrm\Kernel\BaseOrderSaas;
+
+class Score extends BaseOrderSaas
 {
-    public function use()
+    public function __construct()
     {
-        $data = [
-            'use score',
-        ];
-        return response()->json($data);
     }
 }

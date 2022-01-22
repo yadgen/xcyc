@@ -2,13 +2,11 @@
 
 namespace Xcyc\Scrm\OrderSaas;
 
-class Discount
+use Xcyc\Scrm\Kernel\BaseOrderSaas;
+
+class Discount extends BaseOrderSaas
 {
-    public function use()
+    public function __construct()
     {
-        $data = [
-            'use discount',
-        ];
-        return response()->json($data);
     }
 }
