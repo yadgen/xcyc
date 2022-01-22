@@ -6,7 +6,10 @@ use Xcyc\Scrm\Kernel\BaseOrderSaas;
 
 class Discount extends BaseOrderSaas
 {
-    public function __construct()
+    public function use($discounttPrice)
     {
+        $discounttPrice = $discounttPrice + 100;
+
+        return $discounttPrice;
     }
 }

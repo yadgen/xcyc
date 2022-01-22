@@ -30,7 +30,7 @@ class ServiceProvider extends LaravelServiceProvider
         foreach ($apps as $name => $class) {
             $this->app->singleton("xcyc.{$name}", function ($laravelApp) use ($name, $class) {
                 $app = new $class();
-                $app['request'] = $laravelApp['request'];
+                // $app['request'] = $laravelApp['request'];
 
                 return $app;
             });

@@ -6,5 +6,7 @@ use Xcyc\Kernel\ServiceContainer;
 
 class Application extends ServiceContainer
 {
-    protected $providers = [];
+    protected $providers = [
+        OrderSaas\ServiceProvider::class,
+    ];
 }
