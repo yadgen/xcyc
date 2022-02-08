@@ -2,11 +2,14 @@
 
 namespace Xcyc\Scrm\OrderSaas;
 
-use Xcyc\Scrm\Kernel\BaseOrderSaas;
+use Xcyc\Kernel\BaseOrderSaas;
 
 class Score extends BaseOrderSaas
 {
-    public function __construct()
+    public function use($usePrice)
     {
+        $usePrice = $this->actualPayPrice - $usePrice;
+
+        return $usePrice;
     }
 }

@@ -3,9 +3,9 @@
 namespace Xcyc;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use Xcyc\Crm\Application as Crm;
-use Xcyc\Scrm\Application as Scrm;
-use Xcyc\MiniProgram\Application as MiniProgram;
+use Xcyc\Scrm\OrderSaas\Card;
+use Xcyc\Scrm\OrderSaas\Discount;
+use Xcyc\Scrm\OrderSaas\Score;
 
 class ServiceProvider extends LaravelServiceProvider
 {
@@ -22,9 +22,9 @@ class ServiceProvider extends LaravelServiceProvider
         $this->setupConfig();
 
         $apps = [
-            'crm' => Crm::class,
-            'scrm' => Scrm::class,
-            'mini_program' => MiniProgram::class,
+            'scrm.discount' => Discount::class,
+            'scrm.score' => Score::class,
+            'scrm.card' => Card::class,
         ];
 
         foreach ($apps as $name => $class) {

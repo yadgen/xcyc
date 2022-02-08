@@ -2,14 +2,14 @@
 
 namespace Xcyc\Scrm\OrderSaas;
 
-use Xcyc\Scrm\Kernel\BaseOrderSaas;
+use Xcyc\Kernel\BaseOrderSaas;
 
 class Discount extends BaseOrderSaas
 {
-    public function use($discounttPrice)
+    public function use($usePrice)
     {
-        $discounttPrice = $discounttPrice + 100;
+        $usePrice = $this->actualPayPrice - $usePrice;
 
-        return $discounttPrice;
+        return $usePrice;
     }
 }
