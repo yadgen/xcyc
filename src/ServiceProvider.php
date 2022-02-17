@@ -13,14 +13,8 @@ class ServiceProvider extends LaravelServiceProvider
     {
     }
 
-    protected function setupConfig()
-    {
-    }
-
     public function register()
     {
-        $this->setupConfig();
-
         $apps = [
             'scrm.discount' => Discount::class,
             'scrm.score' => Score::class,
